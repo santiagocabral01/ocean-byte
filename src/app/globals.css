@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@300;400;500;600&family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --color-primary-hue: 255;
@@ -42,11 +42,12 @@
   border: none;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+body, *{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   color: var(--color-dark);
   background: var(--color-light);
-  overflow-x: hidden;
 }
 
 .container {
@@ -125,7 +126,7 @@ main .container .left {
   align-items: center;
   padding-block: 11px 6px;
   justify-content: space-around;
-  background: hsl(0, 0%, 76%);
+  background: var(--color-white);
   border-radius: var(--card-border-radius);
 }
 
@@ -137,11 +138,13 @@ main .container .left {
 }
 
 .left .sidebar .menu-item svg {
-  width: 24px;
+  width: 20px;
+  fill: #4c4c4c;
 }
 
 .left .sidebar .menu-item span {
-  font-size: 12px;
+  color: #4c4c4c;
+  font-size: 9px;
 }
 
 .left .sidebar .menu-item:hover {
