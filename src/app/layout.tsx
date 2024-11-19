@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import LeftSideBar from "@/components/LeftSideBar";
+import StaticHeadBar from "@/components/StaticHeadBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <main>
           <div className="container">
+            <StaticHeadBar/>
             <LeftSideBar/>
             {children}
           </div>

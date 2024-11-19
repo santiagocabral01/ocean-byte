@@ -22,7 +22,7 @@ export const LeftSideBar = ()=>{
                     <span>Profile</span>
                 </Link> 
             </div>
-        </div>
+        </div> 
     )
 }
 
