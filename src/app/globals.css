@@ -491,7 +491,7 @@ main {
 
 .middle .feeds .feed {
   background: var(--color-white);
-  padding: 16px 10px;
+  padding: 24px 10px;
   font-size: 0.85rem;
   line-height: 1.5;
 }
@@ -506,11 +506,11 @@ main {
   gap: 10px;
 }
 
-.middle .feed .user .info{
+.middle .feed .user .info {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .middle .feed .photo {
@@ -556,23 +556,38 @@ main {
 
 .feed .reactions-date-container {
   width: 100%;
-  display: inline-flex;
+  display: inline-flex
+;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .feed .reactions-date-container .reactions-container{
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+      align-items: start;
+      justify-content: center;
+      gap: 10px;
+}
+
+.quantity-item{
+  font-size: 10px;
+  margin-top: 5px;
+  color: #4c4c4c;
 }
 
 /* ----- container icons ----- */
-
 .like-item-container, .save-item-container, .comment-item-container {
-  height: 25px;
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 34px;
+      justify-content: space-between;
+}
+
+.text-post-image{
+  margin-top: 15px;
+  font-size: 15px;
 }
 
 /* ----- Like container item ----- */
@@ -584,10 +599,10 @@ main {
 .heart-container {
   --heart-color: #4c4c4c;
   position: relative;
-  width: 28px;
-  height: 28px;
+  width: 23px;
+  height: 23px;
   transition: .3s;
-}
+}  
 
 .heart-container .checkbox {
   position: absolute;
@@ -668,9 +683,10 @@ main {
 /* ----- Save Container ------ */
 
 .save-draw {
-  width: 30px;
+  width: 23px;
+  height: 23px;
   --color: #4c4c4c;
-  --size: 26px;
+  --size: 23px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -683,6 +699,8 @@ main {
 
 .save-draw .save-regular {
   position: absolute;
+  width: 22px;
+  height: 22px;
   animation: keyframes-fill .5s;
   transform-origin: top;
 }
@@ -690,6 +708,8 @@ main {
 .save-draw .save-solid {
   position: absolute;
   animation: keyframes-fill .5s;
+  width: 21px;
+  height: 21px;
   display: none;
   transform-origin: top;
 }
@@ -724,8 +744,8 @@ main {
 /* ----- Comment container ----- */
 
 .comment-item-icon {
-  width: 28px;
-  height: 28px;
+  width: 23px;
+  height: 23px;
   fill: #4c4c4c;
 }
 
@@ -835,6 +855,7 @@ main .container .right {
 }
 
 .right .request .info{
+    width: 100%;
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
@@ -905,6 +926,18 @@ main .container .right {
 
 .customize-theme .choose-size span.active{
   background: var(--color-primary);
+}
+
+.profile-class-styles {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.profile-class-styles svg {
+  width: 20px;
 }
 
 /* ----- Font Size ----- */
