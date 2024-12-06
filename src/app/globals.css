@@ -21,7 +21,7 @@
   --color-black: hsl(252, 30%, 10%);
 
   --border-radious: 2rem;
-  --card-border-radius: 1rem;
+  --card-border-radius: 20px;
   --btn-padding: 0.6rem 2rem;
   --search-padding: 0.6rem 1rem;
   --card-padding: 1rem;
@@ -416,14 +416,13 @@ main {
 /* ---- Create post ---- */
 
 .text-box {
-  margin-inline: 10px;
   margin-block: 8px;
 }
 
 .text-box .box-container {
   background-color: #ffffff;
   border-radius: var(--card-border-radius);
-  padding: 8px;
+  padding: 20px;
 }
 
 .text-box textarea {
@@ -432,7 +431,6 @@ main {
   resize: none;
   border: 0;
   border-radius: 6px;
-  padding: 12px 12px 10px 12px;
   font-size: 13px;
   outline: none;
   caret-color: #0a84ff;
@@ -485,13 +483,11 @@ main {
 
 /* ---- Feeds ---- */
 
-.middle .feeds {
-  padding-block: 10px;
-}
-
 .middle .feeds .feed {
   background: var(--color-white);
-  padding: 24px 10px;
+  padding: 10px 0px 20px 0px;
+  border-radius: 20px;
+  margin-block: 10px;
   font-size: 0.85rem;
   line-height: 1.5;
 }
@@ -499,6 +495,8 @@ main {
 .middle .feed .head {
   display: flex;
   justify-content: space-between;
+  padding-inline: 10px;
+  padding-bottom: 10px;
 }
 
 .middle .feed .user {
@@ -514,21 +512,13 @@ main {
 }
 
 .middle .feed .photo {
-  border-radius: var(--card-border-radius);
   overflow: hidden;
   margin: 0.7rem 0;
 }
 
-.middle .feed .action-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.4rem;
-  margin: 0.6rem;
-}
-
 .middle .liked-by {
   display: flex;
+  padding-inline: 10px;
 }
 
 .middle .liked-by span {
@@ -547,20 +537,20 @@ main {
 
 .feed .caption{
   position: relative;
-  margin-top: 6px;
   overflow: hidden;
+  padding-inline: 10px;
   height: 100%;
   max-height: 40px;
   transition: all .1s ease-in;
 }
 
 .feed .reactions-date-container {
+  padding-inline: 10px;
   width: 100%;
-  display: inline-flex
-;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .feed .reactions-date-container .reactions-container{
@@ -576,6 +566,41 @@ main {
   color: #4c4c4c;
 }
 
+.image-full-hidden-container{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.image-full-hidden-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.liked-inf-container-absolute{
+  position: absolute;
+  z-index: 1;
+  bottom: -1px;
+  width: 100%;
+  background: rgb(255 255 255 / 74%);
+  pointer-events: none;
+  padding-block: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.button-view-more-post-description{
+  background: #fff;
+  padding: 1px 6px;
+  color: #6a6a6a;
+  border-radius: 7px;
+}
+
 /* ----- container icons ----- */
 .like-item-container, .save-item-container, .comment-item-container {
   display: flex;
@@ -585,10 +610,50 @@ main {
       justify-content: space-between;
 }
 
-.text-post-image{
-  margin-top: 15px;
+.text-post-image {
+  margin-bottom: 15px;
   font-size: 15px;
+  padding-inline: 10px;
 }
+
+/* ----- Video post container ----- */
+
+.video-background-blur-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.2;
+  margin-bottom: 10px;
+}
+
+.background-blur-reproduction{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+
+.item-reproductor-container-video-act{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1 / 1.2;
+  backdrop-filter: blur(50px);
+  padding: 10px 10px 46px 10px;
+}
+
+.video-item-post{
+  width: auto;
+  border-radius: 15px;
+  height: -webkit-fill-available;
+}
+
 
 /* ----- Like container item ----- */
 
@@ -1034,4 +1099,15 @@ main .container .right {
   border: 2px solid var(--color-gray);
   border-radius: 50%;
   margin-right: 1rem;
+}
+
+
+
+/* jhjhjhjhjh */
+
+
+.icon-badge-check:hover {
+  stroke: #4CAF50; /* Green check on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: all 0.3s ease-in-out;
 }

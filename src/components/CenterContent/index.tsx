@@ -1,5 +1,7 @@
+import FeedImageDescriptionElement from "../FeedImageDescriptionElement";
 import FeedPictureItemElement from "../FeedPictureItemElement";
 import FeedtextPostItemElement from "../FeedtextPostItemElement";
+import FeedVideoPreviewPostItemElement from "../FeedVideoPreviewPostItemElement";
 
 export const CenterContent = ()=>{
 
@@ -99,7 +101,8 @@ export const CenterContent = ()=>{
 
                     <FeedPictureItemElement/>
                     <FeedtextPostItemElement/>
-
+                    <FeedImageDescriptionElement/>
+                    <FeedVideoPreviewPostItemElement/>
 
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 

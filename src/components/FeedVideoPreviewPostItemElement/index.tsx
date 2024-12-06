@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 
-export const FeedPictureItemElement: FunctionComponent = ()=>{
+export const FeedVideoPreviewPostItemElement: FunctionComponent = ()=>{
 
     return(
         <div className="feed">
@@ -10,7 +10,7 @@ export const FeedPictureItemElement: FunctionComponent = ()=>{
                     <img src="/profile-13.jpg" alt="pic"/>
                 </div>
                 <div className="info">
-                    <h3>
+                    <h3 className="profile-class-styles">
                         <b>
                             Lana Rose
                         </b>
@@ -23,21 +23,28 @@ export const FeedPictureItemElement: FunctionComponent = ()=>{
             </span>
         </div>
 
-        <div className="caption">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis accusamus, quo cumque blanditiis fugiat exercitationem quod provident iure, et at culpa voluptatum rerum, beatae ab harum dicta nam doloribus.<span className="harsh-tag">#lifestyle</span></p>
-        </div>
+        <div className="video-background-blur-item">
+            <video autoPlay loop muted className="background-blur-reproduction" src="/videoexample.mp4"></video>
+            <div className="item-reproductor-container-video-act">
+                <video autoPlay loop muted className="video-item-post" src="/videoexample.mp4"></video>
 
-        <div className="photo">
-            <img src="/feed-1.jpg"/>
+                <div className="liked-inf-container-absolute">
+                    <div className="liked-by">
+                        <span><img src="/profile-10.jpg"/></span>
+                        <span><img src="/profile-4.jpg"/></span>
+                        <span><img src="/profile-15.jpg"/></span>
+                        <p>liked-by <b>Ernest Achiver</b> and <b>2,323 others</b></p>
+                    </div>
+
+                    <button className="button-view-more-post-description">
+                        <b>
+                            More...
+                        </b>
+                    </button>
+                </div>
+            </div>
         </div>
         
-        <div className="liked-by">
-            <span><img src="/profile-10.jpg"/></span>
-            <span><img src="/profile-4.jpg"/></span>
-            <span><img src="/profile-15.jpg"/></span>
-            <p>liked-by <b>Ernest Achiver</b> and <b>2,323 others</b></p>
-        </div>
-
         <div className="reactions-date-container">
             <div className="reactions-container">
 
@@ -98,7 +105,6 @@ export const FeedPictureItemElement: FunctionComponent = ()=>{
         </div>
     </div>
     )
-
 }
 
-export default FeedPictureItemElement;
+export default FeedVideoPreviewPostItemElement;
