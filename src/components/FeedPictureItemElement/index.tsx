@@ -44,15 +44,15 @@ export const FeedPictureItemElement: FunctionComponent = ()=>{
                         <div className="heart-container" title="Like">
                             <input type="checkbox" className="checkbox" id="Give-It-An-Id"/>
                             <div className="svg-container">
-                                <svg viewBox="0 0 24 24" className="svg-outline" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                                <svg strokeWidth="2" viewBox="0 0 24 24" className="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 17.5 1.917 a 6.4 6.4 0 0 0 -5.5 3.3 a 6.4 6.4 0 0 0 -5.5 -3.3 A 6.8 6.8 0 0 0 0 8.967 c 0 4.547 4.786 9.513 8.8 12.88 a 4.974 4.974 0 0 0 6.4 0 C 19.214 18.48 24 13.514 24 8.967 A 6.8 6.8 0 0 0 17.5 1.917 Z m -3.774 18.1 a 2.973 2.973 0 0 1 -3.701 -0.352 C 4.947 16.006 2 11.87 2.378 8.987 a 4.8 4.8 0 0 1 4.431 -4.702 A 4.8 4.8 0 0 1 10.695 8.917 a 1 1 0 0 0 2.643 0.035 a 4.8 4.8 0 0 1 4.602 -4.737 A 4.8 4.8 0 0 1 21.619 8.987 C 22 11.87 19.053 16.006 13.796 19.982 Z">
                                     </path>
                                 </svg>
-                                <svg viewBox="0 0 24 24" className="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                                <svg strokeWidth="2" viewBox="0 0 24 24" className="svg-filled" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
                                     </path>
                                 </svg>
-                                <svg className="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                <svg strokeWidth="2" className="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
                                     <polygon points="10,10 20,20"></polygon>
                                     <polygon points="10,50 20,50"></polygon>
                                     <polygon points="20,80 30,70"></polygon>
@@ -105,12 +105,13 @@ export const FeedPictureItemElement: FunctionComponent = ()=>{
                 <div className="shareto-item-container">
                     <button>
                         <svg 
-                        viewBox="0 0 512 512" 
-                        className="shareto-item-icon"
+                            viewBox="0 0 512 512" 
+                            stroke="currentColor"
+                            strokeWidth="1.7"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="shareto-item-icon"
                         >
-                            <path
-                            d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"
-                            ></path>
+                            <path d="M 16.1 260.2 c -22.6 12.9 -20.5 47.3 3.6 57.3 L 160 376 V 479.3 c 0 18.1 14.6 32.7 32.7 32.7 c 9.7 0 18.9 -4.3 25.1 -11.8 l 62 -74.3 l 123.9 51.6 c 18.9 7.9 40.8 -4.5 43.9 -24.7 l 64 -416 c 1.9 -12.1 -3.4 -24.3 -13.5 -31.2 s -23.3 -7.5 -34 -1.4 l -448 256 z m 24.007 26.644 L 444.035 52.33 L 192.266 343.315 l 0.785 1.569 L 39.323 287.628 z M 413.446 435.866 L 227.561 362.139 L 475.408 60.174 L 414.231 436.65 z"></path>
                         </svg>
                     </button>
 
