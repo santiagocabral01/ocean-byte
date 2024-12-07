@@ -40,6 +40,7 @@
   text-decoration: none;
   list-style: none;
   border: none;
+  transition: all .1s ease-in;
 }
 
 body{
@@ -496,7 +497,9 @@ main {
   display: flex;
   justify-content: space-between;
   padding-inline: 10px;
+  margin-bottom: 10px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #d5d5d5;
 }
 
 .middle .feed .user {
@@ -519,6 +522,9 @@ main {
 .middle .liked-by {
   display: flex;
   padding-inline: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d5d5d5;
 }
 
 .middle .liked-by span {
@@ -549,7 +555,7 @@ main {
   width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 10px;
 }
 
@@ -571,6 +577,7 @@ main {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
+  margin-bottom: 10px;
 }
 
 .image-full-hidden-container img{
@@ -602,12 +609,13 @@ main {
 }
 
 /* ----- container icons ----- */
-.like-item-container, .save-item-container, .comment-item-container {
+
+.like-item-container, .save-item-container, .comment-item-container, .download-item-container, .shareto-item-container {
   display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 34px;
-      justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 34px;
+  justify-content: center;
 }
 
 .text-post-image {
@@ -645,7 +653,7 @@ main {
   width: 100%;
   aspect-ratio: 1 / 1.2;
   backdrop-filter: blur(50px);
-  padding: 10px 10px 46px 10px;
+  padding: 10px;
 }
 
 .video-item-post{
@@ -809,8 +817,24 @@ main {
 /* ----- Comment container ----- */
 
 .comment-item-icon {
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 27px;
+  stroke: #4c4c4c;
+}
+
+.comment-item-icon{}
+
+/* ----- Download container ----- */
+
+.download-item-icon{
+  width: 25px;
+  stroke: #4c4c4c;
+}
+
+/* ----- Shareto container ----- */
+
+.shareto-item-icon {
+  width: 25px;
   fill: #4c4c4c;
 }
 

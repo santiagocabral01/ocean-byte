@@ -39,8 +39,6 @@ export const FeedPictureItemElement: FunctionComponent = ()=>{
         </div>
 
         <div className="reactions-date-container">
-            <div className="reactions-container">
-
                 <div className="like-item-container">
                     <button>
                         <div className="heart-container" title="Like">
@@ -83,18 +81,62 @@ export const FeedPictureItemElement: FunctionComponent = ()=>{
 
                 <div className="comment-item-container">
                     <button>
-                        <svg className="comment-item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                        <svg
+                            className="comment-item-icon"
+                            strokeLinejoin="round"
+                            strokeLinecap="round"
+                            stroke="currentColor"
+                            strokeWidth="1.7"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            >
+                            <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+
+                            <path
+                                d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
+                            ></path>
+                        </svg>
                     </button>
 
                     <span className="quantity-item">300</span>
                 </div>
-            </div>
 
-            <div className="date-container">
-                <span className="date-item">
-                    25 minutes ago
-                </span>
-            </div>
+                <div className="shareto-item-container">
+                    <button>
+                        <svg 
+                        viewBox="0 0 512 512" 
+                        className="shareto-item-icon"
+                        >
+                            <path
+                            d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"
+                            ></path>
+                        </svg>
+                    </button>
+
+                    <span className="quantity-item">300</span>
+                </div>
+
+                <div className="download-item-container">
+                    <button>
+                    <svg
+                        className="download-item-icon"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                            strokeLinejoin="round"
+                            strokeLinecap="round"
+                        ></path>
+                        </svg>
+                    </button>
+
+                    <span className="quantity-item">300</span>
+                </div>
         </div>
     </div>
     )

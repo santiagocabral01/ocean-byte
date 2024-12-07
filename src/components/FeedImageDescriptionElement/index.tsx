@@ -27,22 +27,15 @@ export const FeedImageDescriptionElement: FunctionComponent = ()=>{
         <div className="image-full-hidden-container">
             <img src="/park.avif" alt="" />
         
-            <div className="liked-inf-container-absolute">
-                <div className="liked-by">
-                    <span><img src="/profile-10.jpg"/></span>
-                    <span><img src="/profile-4.jpg"/></span>
-                    <span><img src="/profile-15.jpg"/></span>
-                    <p>liked-by <b>Ernest Achiver</b> and <b>2,323 others</b></p>
-                </div>
-
-                <button className="button-view-more-post-description">
-                    <b>
-                        More...
-                    </b>
-                </button>
-            </div>
+        </div>
+        <div className="liked-by">
+            <span><img src="/profile-10.jpg"/></span>
+            <span><img src="/profile-4.jpg"/></span>
+            <span><img src="/profile-15.jpg"/></span>
+            <p>liked-by <b>Ernest Achiver</b> and <b>2,323 others</b></p>
         </div>
         <div className="reactions-date-container">
+            
             <div className="reactions-container">
 
                 <div className="like-item-container">
