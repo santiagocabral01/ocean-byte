@@ -1184,19 +1184,19 @@ main .container .right {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
 }
 
 .trend-start-list, .trend-mid_start-list, .trend-center-list, .trend-mid_end-list, .trend-end-list{
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
 }
 
 .trend-start-list .trend-start-item, .trend-mid_start-list .trend-mid_start-item, .trend-center-list .trend-center-item, .trend-mid_end-list .trend-mid_end-item, .trend-end-list .trend-end-item{
-
+  margin-inline: 50px;
   border-radius: 50%;
 }
 
@@ -1208,20 +1208,21 @@ main .container .right {
 
 .trend-mid_start-list .trend-mid_start-item{
   background-color: green;
-  width: 64px;
-  height: 64px;
 }
 
 .trend-center-list .trend-center-item{
   background-color: blue;
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
 }
 
 .trend-mid_end-list .trend-mid_end-item{
   background-color: orange;
-  width: 64px;
-  height: 64px;
+}
+
+.trend-mid_end-list .trend-mid_end-item, .trend-mid_start-list .trend-mid_start-item{
+  width: 40px;
+  height: 40px;
 }
 
 .trend-end-list .trend-end-item{
@@ -1231,5 +1232,44 @@ main .container .right {
 }
 
 .trend-center-list{
-  gap: 6px;
+  padding-inline: 4px;
+}
+
+.trend-mid_start-list, .trend-mid_end-list{
+  margin-left: 73px;
+}
+
+/* Battle test */
+.container-bubble-menu {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: auto;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border: 2px solid #ddd;
+  border-radius: 12px;
+
+  /* Área desplazable */
+  max-width: 2000px;
+  max-height: 2000px;
+}
+
+.bubble {
+  position: absolute;
+  width: 100px; /* Tamaño base más amplio */
+  height: 100px; /* Tamaño base más amplio */
+  background: #61dafb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.2s ease-out, background 0.2s;
+}
+
+.bubble:hover {
+  background: #21a1f1;
 }

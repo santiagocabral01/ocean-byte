@@ -1,15 +1,12 @@
 import { FunctionComponent } from "react";
+import BubbleMenu from "../BubbleMenu";
 
 export const TrendsMenu: FunctionComponent = ()=>{
 
     return(
         <article className="section-elements-trend">
-            <ul className="items-elements-trend-container">
+            {/* <ul className="items-elements-trend-container">
                 <li className="trend-start-list">
-                    <button className="trend-start-item"></button>
-                    <button className="trend-start-item"></button>
-                    <button className="trend-start-item"></button>
-                    <button className="trend-start-item"></button>
                     <button className="trend-start-item"></button>
                     <button className="trend-start-item"></button>
                     <button className="trend-start-item"></button>
@@ -46,6 +43,7 @@ export const TrendsMenu: FunctionComponent = ()=>{
                     <button className="trend-center-item"></button>
                     <button className="trend-center-item"></button>
                     <button className="trend-center-item"></button>
+                    <button className="trend-center-item"></button>
                 </li>
                 <li className="trend-mid_end-list">
                     <button className="trend-mid_end-item"></button>
@@ -71,13 +69,12 @@ export const TrendsMenu: FunctionComponent = ()=>{
                     <button className="trend-end-item"></button>
                     <button className="trend-end-item"></button>
                     <button className="trend-end-item"></button>
-                    <button className="trend-end-item"></button>
-                    <button className="trend-end-item"></button>
-                    <button className="trend-end-item"></button>
-                    <button className="trend-end-item"></button>
                 </li>
-            </ul>
+            </ul> */}
+
+            <BubbleMenu/>
         </article>
+
     )
 
 }
