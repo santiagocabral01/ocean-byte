@@ -52,7 +52,7 @@ body{
 }
 
 .profile-photo {
-  width: 2.7rem;
+  width: 2rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
@@ -504,14 +504,46 @@ main {
 
 .middle .feed .user {
   display: flex;
-  gap: 10px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
 }
 
-.middle .feed .user .info {
+.middle .feed .edit {
+  display: flex;
+      gap: 10px;
+      padding-inline: 10px;
+      align-items: center;
+      justify-content: center;
+}
+
+.middle .feed .edit .edit-action-btn{
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10rem;
+}
+
+.middle .feed .edit .edit-action-btn:hover{
+  background-color: #e8e8e8;
+}
+
+.middle .feed .edit .edit-action-btn svg {
+  width: 4px;
+  fill: #9c9c9c;
+}
+
+.middle .feed .user .info{
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
+}
+
+.middle .feed .user .info .date-info-post{
+  font-size: 10px;
 }
 
 .middle .feed .photo {
@@ -555,7 +587,7 @@ main {
   width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 10px;
 }
 
@@ -564,6 +596,14 @@ main {
       align-items: start;
       justify-content: center;
       gap: 10px;
+}
+
+.left-reactions-container, .right-reactions-container{
+  display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
 }
 
 .quantity-item{
@@ -834,7 +874,7 @@ main {
 /* ----- Shareto container ----- */
 
 .shareto-item-icon {
-  width: 25px;
+  width: 23px;
   fill: #4c4c4c;
 }
 

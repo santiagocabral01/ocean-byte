@@ -37,22 +37,21 @@ export const FeedtextPostItemElement: FunctionComponent = ()=>{
                     <p>liked-by <b>Ernest Achiver</b> and <b>2,323 others</b></p>
                 </div>
                 <div className="reactions-date-container">
-                    <div className="reactions-container">
-
+                    <div className="left-reactions-container">
                         <div className="like-item-container">
                             <button>
                                 <div className="heart-container" title="Like">
                                     <input type="checkbox" className="checkbox" id="Give-It-An-Id"/>
                                     <div className="svg-container">
-                                        <svg viewBox="0 0 24 24" className="svg-outline" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                                        <svg strokeWidth="2" viewBox="0 0 24 24" className="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M 17.5 1.917 a 6.4 6.4 0 0 0 -5.5 3.3 a 6.4 6.4 0 0 0 -5.5 -3.3 A 6.8 6.8 0 0 0 0 8.967 c 0 4.547 4.786 9.513 8.8 12.88 a 4.974 4.974 0 0 0 6.4 0 C 19.214 18.48 24 13.514 24 8.967 A 6.8 6.8 0 0 0 17.5 1.917 Z m -3.774 18.1 a 2.973 2.973 0 0 1 -3.701 -0.352 C 4.947 16.006 2 11.87 2.378 8.987 a 4.8 4.8 0 0 1 4.431 -4.702 A 4.8 4.8 0 0 1 10.695 8.917 a 1 1 0 0 0 2.643 0.035 a 4.8 4.8 0 0 1 4.602 -4.737 A 4.8 4.8 0 0 1 21.619 8.987 C 22 11.87 19.053 16.006 13.796 19.982 Z">
                                             </path>
                                         </svg>
-                                        <svg viewBox="0 0 24 24" className="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                                        <svg strokeWidth="2" viewBox="0 0 24 24" className="svg-filled" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
                                             </path>
                                         </svg>
-                                        <svg className="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                        <svg strokeWidth="2" className="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
                                             <polygon points="10,10 20,20"></polygon>
                                             <polygon points="10,50 20,50"></polygon>
                                             <polygon points="20,80 30,70"></polygon>
@@ -67,6 +66,47 @@ export const FeedtextPostItemElement: FunctionComponent = ()=>{
                             <span className="quantity-item">300</span>
                         </div>
 
+                        <div className="shareto-item-container">
+                            <button>
+                                <svg 
+                                    viewBox="0 0 512 512" 
+                                    stroke="currentColor"
+                                    strokeWidth="1.7"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="shareto-item-icon"
+                                >
+                                    <path d="M 16.1 260.2 c -22.6 12.9 -20.5 47.3 3.6 57.3 L 160 376 V 479.3 c 0 18.1 14.6 32.7 32.7 32.7 c 9.7 0 18.9 -4.3 25.1 -11.8 l 62 -74.3 l 123.9 51.6 c 18.9 7.9 40.8 -4.5 43.9 -24.7 l 64 -416 c 1.9 -12.1 -3.4 -24.3 -13.5 -31.2 s -23.3 -7.5 -34 -1.4 l -448 256 z m 24.007 26.644 L 444.035 52.33 L 192.266 343.315 l 0.785 1.569 L 39.323 287.628 z M 413.446 435.866 L 227.561 362.139 L 475.408 60.174 L 414.231 436.65 z"></path>
+                                </svg>
+                            </button>
+
+                            <span className="quantity-item">300</span>
+                        </div>
+
+                        <div className="comment-item-container">
+                            <button>
+                                <svg
+                                    className="comment-item-icon"
+                                    strokeLinejoin="round"
+                                    strokeLinecap="round"
+                                    stroke="currentColor"
+                                    strokeWidth="1.7"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    >
+                                    <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+
+                                    <path
+                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
+                                    ></path>
+                                </svg>
+                            </button>
+
+                            <span className="quantity-item">300</span>
+                        </div>
+                    </div>
+
+                    <div className="right-reactions-container">
                         <div className="save-item-container">
                             <button>
                                 <label className="save-draw">
@@ -75,23 +115,26 @@ export const FeedtextPostItemElement: FunctionComponent = ()=>{
                                     <svg className="save-solid" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"></path></svg>
                                 </label>
                             </button>
-
-                            <span className="quantity-item">300</span>
                         </div>
 
-                        <div className="comment-item-container">
+                        <div className="download-item-container">
                             <button>
-                                <svg className="comment-item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                            <svg
+                                className="download-item-icon"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path
+                                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                                    strokeLinejoin="round"
+                                    strokeLinecap="round"
+                                ></path>
+                                </svg>
                             </button>
-
-                            <span className="quantity-item">300</span>
                         </div>
-                    </div>
-
-                    <div className="date-container">
-                        <span className="date-item">
-                            25 minutes ago
-                        </span>
                     </div>
                 </div>
             </div>
