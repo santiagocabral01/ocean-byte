@@ -1287,13 +1287,10 @@ main .container .right {
   background: #21a1f1;
 }
 
-
-/* Permite solo desplazamiento, deshabilita el zoom */
 html, body {
   touch-action: pan-x pan-y;  /* Permite el desplazamiento sin zoom */
 }
 
-/* Además, evitamos el zoom táctil solo, sin afectar el desplazamiento */
 body {
   -webkit-user-select: none; /* Deshabilita la selección con gestos táctiles */
 }
