@@ -19,7 +19,6 @@
   --color-success: hsl(120, 95%, 65%);
   --color-danger: hsl(0, 95%, 65%);
   --color-black: hsl(252, 30%, 10%);
-
   --border-radious: 2rem;
   --card-border-radius: 20px;
   --btn-padding: 0.6rem 2rem;
@@ -31,14 +30,12 @@
 }
 
 html, body {
-  touch-action: none;  /* Desactiva todos los gestos táctiles */
-  overflow: hidden;    /* Bloquea el zoom por gestos */
+  touch-action: manipulation;  /* Solo bloquea el zoom con pinch-to-zoom */
 }
 
 body {
   -webkit-user-select: none; /* Deshabilita la selección de texto con el gesto táctil */
 }
-
 
 *,
 *::before,

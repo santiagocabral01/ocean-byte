@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Metaetiqueta para deshabilitar el zoom y los gestos táctiles */}
+        {/* Metaetiqueta para deshabilitar el zoom pero mantener el scroll */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
