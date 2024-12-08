@@ -1,23 +1,34 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
 
-const BubbleMenu = () => {
-  const containerRef = useRef(null);
-  const [visibleCenter, setVisibleCenter] = useState({ x: 0, y: 0 });
+// Tipos personalizados
+interface Position {
+  x: number;
+  y: number;
+}
+
+interface Bubble {
+  id: number;
+  label: string;
+}
+
+const BubbleMenu: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [visibleCenter, setVisibleCenter] = useState<Position>({ x: 0, y: 0 });
 
   // Array de nombres
-  const names = [
+  const names: string[] = [
     "John", "Sofia", "Carlos", "Emily", "Daniel", "Laura", "Miguel", "Sara",
     "Lucia", "Pedro", "Ana", "Diego", "Elena", "Mario", "Isabel", "Victor",
     "Clara", "Gabriel", "Paula", "Fernando", "Valeria", "Luis", "Carmen",
     "Javier", "Andrea", "Alberto", "Cristina", "Roberto", "Patricia", "Tomás",
     "Rosa", "Alba", "Iván", "Beatriz", "David", "Angela", "Hugo", "Natalia",
     "Oscar", "Marta", "Enrique", "Julia", "Ramiro", "Noelia", "Lucas", "Silvia",
-    "Diego", "Marina", "Jorge", "Emma"
+    "Diego", "Marina", "Jorge", "Emma",
   ];
 
   // Crear las burbujas mapeando nombres (ciclo si hay más burbujas que nombres)
-  const bubbles = Array.from({ length: 50 }, (_, i) => ({
+  const bubbles: Bubble[] = Array.from({ length: 50 }, (_, i) => ({
     id: i,
     label: names[i % names.length],
   }));
@@ -43,12 +54,18 @@ const BubbleMenu = () => {
     const container = containerRef.current;
 
     // Actualizar el centro al hacer scroll
-    container.addEventListener("scroll", updateVisibleCenter);
+    if (container) {
+      container.addEventListener("scroll", updateVisibleCenter);
+    }
 
-    return () => container.removeEventListener("scroll", updateVisibleCenter);
+    return () => {
+      if (container) {
+        container.removeEventListener("scroll", updateVisibleCenter);
+      }
+    };
   }, []);
 
-  const calculateScale = (bubbleX, bubbleY) => {
+  const calculateScale = (bubbleX: number, bubbleY: number): number => {
     const distance = Math.sqrt(
       Math.pow(visibleCenter.x - bubbleX, 2) +
       Math.pow(visibleCenter.y - bubbleY, 2)
@@ -63,8 +80,8 @@ const BubbleMenu = () => {
         const col = index % 10; // Columna
 
         // Posiciones con efecto ladrillo y mayor separación
-        const bubbleX = col * 220 + (row % 2 === 0 ? 0 : 75); // Alterna la posición X según la fila
-        const bubbleY = row * 220; // Más separación entre filas
+        const bubbleX = col * 120 + (row % 2 === 0 ? 0 : 75); // Alterna la posición X según la fila
+        const bubbleY = row * 110; // Más separación entre filas
 
         const scale = calculateScale(bubbleX, bubbleY);
 

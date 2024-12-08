@@ -1257,8 +1257,8 @@ main .container .right {
 
 .bubble {
   position: absolute;
-  width: 100px; /* Tamaño base más amplio */
-  height: 100px; /* Tamaño base más amplio */
+  width: 40px;
+  height: 40px;
   background: #61dafb;
   border-radius: 50%;
   display: flex;
@@ -1266,7 +1266,7 @@ main .container .right {
   align-items: center;
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 7px;
   transition: transform 0.2s ease-out, background 0.2s;
 }
 
