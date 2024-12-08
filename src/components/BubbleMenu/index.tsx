@@ -92,7 +92,7 @@ const BubbleMenu: React.FC = () => {
       Math.pow(visibleCenter.x - bubbleX, 2) +
       Math.pow(visibleCenter.y - bubbleY, 2)
     );
-    return Math.max(0.5, 3 - distance / 300); // Diferencia de tamaño más notable
+    return Math.max(0.5, 3 - distance / 200); // Diferencia de tamaño más notable
   };
 
   return (
@@ -103,11 +103,11 @@ const BubbleMenu: React.FC = () => {
 
         // Aumentamos la separación entre las burbujas y los bordes
         const marginX = 50; // margen en X
-        const marginY = 50; // margen en Y
+        const marginY = 20; // margen en Y
 
         // Posiciones con efecto ladrillo y mayor separación
-        const bubbleX = col * 116 + (row % 2 === 0 ? 0 : 75) + marginX; // Alterna la posición X según la fila
-        const bubbleY = row * 115 + marginY; // Más separación entre filas y bordes
+        const bubbleX = col * 88 + (row % 2 === 0 ? 0 : 40) + marginX; // Alterna la posición X según la fila
+        const bubbleY = row * 85 + marginY; // Más separación entre filas y bordes
 
         const scale = calculateScale(bubbleX, bubbleY);
 
