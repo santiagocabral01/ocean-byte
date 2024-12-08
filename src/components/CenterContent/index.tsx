@@ -98,14 +98,12 @@ export const CenterContent = ()=>{
                     </div>
                 
                 <div className="feeds">
-
                     <FeedPictureItemElement/>
                     <FeedtextPostItemElement/>
                     <FeedImageDescriptionElement/>
                     <FeedVideoPreviewPostItemElement/>
-
-                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
+                    
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
 
             </div>

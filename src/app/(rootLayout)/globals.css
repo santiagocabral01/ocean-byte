@@ -547,7 +547,7 @@ main {
 
 .middle .feed .photo {
   overflow: hidden;
-  margin: 0.7rem 0;
+  margin-bottom: 10px;
 }
 
 .middle .liked-by {
@@ -575,7 +575,7 @@ main {
 .feed .caption{
   position: relative;
   overflow: hidden;
-  padding-inline: 10px;
+  margin: 10px;
   height: 100%;
   max-height: 40px;
   transition: all .1s ease-in;
@@ -1061,8 +1061,8 @@ main .container .right {
   width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content: start;
-  gap: 10px;
+  justify-content: center;
+  gap: 3px;
 }
 
 .profile-class-styles svg {
