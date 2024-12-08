@@ -29,13 +29,17 @@
   --sticky-top-right: -18rem;
 }
 
+/* Permite solo desplazamiento, deshabilita el zoom */
 html, body {
-  touch-action: manipulation;  /* Solo bloquea el zoom con pinch-to-zoom */
+  touch-action: pan-x pan-y;  /* Permite el desplazamiento sin zoom */
 }
 
+/* Además, evitamos el zoom táctil solo, sin afectar el desplazamiento */
 body {
-  -webkit-user-select: none; /* Deshabilita la selección de texto con el gesto táctil */
+  -webkit-user-select: none; /* Deshabilita la selección con gestos táctiles */
 }
+
+
 
 *,
 *::before,
@@ -1281,4 +1285,15 @@ main .container .right {
 
 .bubble:hover {
   background: #21a1f1;
+}
+
+
+/* Permite solo desplazamiento, deshabilita el zoom */
+html, body {
+  touch-action: pan-x pan-y;  /* Permite el desplazamiento sin zoom */
+}
+
+/* Además, evitamos el zoom táctil solo, sin afectar el desplazamiento */
+body {
+  -webkit-user-select: none; /* Deshabilita la selección con gestos táctiles */
 }
