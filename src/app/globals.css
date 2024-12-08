@@ -497,7 +497,6 @@ main {
   display: flex;
   justify-content: space-between;
   padding-inline: 10px;
-  margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #d5d5d5;
 }
@@ -659,7 +658,7 @@ main {
 }
 
 .text-post-image {
-  margin-bottom: 15px;
+  margin-block: 10px;
   font-size: 15px;
   padding-inline: 10px;
 }

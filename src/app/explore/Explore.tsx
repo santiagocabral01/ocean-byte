@@ -4,7 +4,7 @@ export const Explore: FunctionComponent = ()=>{
 
     return(
         <>
-        
+            HOLA
         </>
     )
 }

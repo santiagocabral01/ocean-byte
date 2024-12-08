@@ -4,24 +4,26 @@ export const FeedVideoPreviewPostItemElement: FunctionComponent = ()=>{
 
     return(
         <div className="feed">
-        <div className="head">
-            <div className="user">
-                <div className="profile-photo">
-                    <img src="/profile-13.jpg" alt="pic"/>
+            <div className="head">
+                <div className="user">
+                    <div className="profile-photo">
+                        <img src="/profile-13.jpg" alt="pic"/>
+                    </div>
+                    <div className="info">
+                        <h3 className="profile-class-styles">
+                            <b>
+                                Lana Rose
+                            </b>
+                        </h3>
+                        <span className="date-info-post">15 Minutes ago</span>
+                    </div>
                 </div>
-                <div className="info">
-                    <h3 className="profile-class-styles">
-                        <b>
-                            Lana Rose
-                        </b>
-                    </h3>
-                    <small>Dubai, 15 MINUTES AGO</small>
-                </div>
+                <span className="edit">
+                    <button className="edit-action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+                    </button>
+                </span>
             </div>
-            <span className="edit">
-                <i className="uil uil-ellipsis-h"></i>
-            </span>
-        </div>
 
         <div className="video-background-blur-item">
             <video autoPlay loop muted className="background-blur-reproduction" src="/videoexample.mp4"></video>
