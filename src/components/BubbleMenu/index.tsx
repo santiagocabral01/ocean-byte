@@ -65,6 +65,28 @@ const BubbleMenu: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const centerScrollPosition = () => {
+      const container = containerRef.current;
+      if (container) {
+        const scrollX = (container.scrollWidth - container.clientWidth) / 2;
+        const scrollY = (container.scrollHeight - container.clientHeight) / 2;
+        container.scrollLeft = scrollX;  // Centra el scroll horizontal
+        container.scrollTop = scrollY;   // Centra el scroll vertical
+      }
+    };
+
+    centerScrollPosition(); // Centrar el contenido cuando se monta el componente
+
+    // También puedes volver a centrar cuando se redimensiona la ventana
+    window.addEventListener("resize", centerScrollPosition);
+
+    return () => {
+      window.removeEventListener("resize", centerScrollPosition);
+    };
+  }, []);
+
+
   const calculateScale = (bubbleX: number, bubbleY: number): number => {
     const distance = Math.sqrt(
       Math.pow(visibleCenter.x - bubbleX, 2) +
