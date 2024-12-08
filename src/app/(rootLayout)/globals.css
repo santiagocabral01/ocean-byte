@@ -30,6 +30,16 @@
   --sticky-top-right: -18rem;
 }
 
+html, body {
+  touch-action: none;  /* Desactiva todos los gestos táctiles */
+  overflow: hidden;    /* Bloquea el zoom por gestos */
+}
+
+body {
+  -webkit-user-select: none; /* Deshabilita la selección de texto con el gesto táctil */
+}
+
+
 *,
 *::before,
 *::after {

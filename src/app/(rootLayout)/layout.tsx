@@ -27,16 +27,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        {/* Metaetiqueta para deshabilitar el zoom y los gestos táctiles */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <main>
           <div className="container">
-            <StaticHeadBar/>
-            <LeftSideBar/>
+            <StaticHeadBar />
+            <LeftSideBar />
             {children}
           </div>
-        </main> 
+        </main>
       </body>
     </html>
   );

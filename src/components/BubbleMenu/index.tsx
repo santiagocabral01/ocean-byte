@@ -126,6 +126,7 @@ const BubbleMenu: React.FC = () => {
         );
       })}
     </div>
+    
   );
 };
 
