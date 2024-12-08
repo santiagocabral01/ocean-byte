@@ -79,9 +79,13 @@ const BubbleMenu: React.FC = () => {
         const row = Math.floor(index / 10); // Fila
         const col = index % 10; // Columna
 
+        // Aumentamos la separación entre las burbujas y los bordes
+        const marginX = 50; // margen en X
+        const marginY = 50; // margen en Y
+
         // Posiciones con efecto ladrillo y mayor separación
-        const bubbleX = col * 120 + (row % 2 === 0 ? 0 : 75); // Alterna la posición X según la fila
-        const bubbleY = row * 110; // Más separación entre filas
+        const bubbleX = col * 116 + (row % 2 === 0 ? 0 : 75) + marginX; // Alterna la posición X según la fila
+        const bubbleY = row * 115 + marginY; // Más separación entre filas y bordes
 
         const scale = calculateScale(bubbleX, bubbleY);
 

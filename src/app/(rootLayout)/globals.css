@@ -1242,17 +1242,17 @@ main .container .right {
 /* Battle test */
 .container-bubble-menu {
   position: relative;
-  width: 800px;
-  height: 600px;
+  width: 100%;
+  height: 400px;
   margin: 0 auto;
   overflow: auto;
-  background: linear-gradient(135deg, #fdfbfb, #ebedee);
-  border: 2px solid #ddd;
-  border-radius: 12px;
+  scrollbar-width: none;
+  border-radius: 19px;
+  max-height: 400px;
+}
 
-  /* Área desplazable */
-  max-width: 2000px;
-  max-height: 2000px;
+.container-bubble-menu::-webkit-scrollbar {
+  display: none;
 }
 
 .bubble {
@@ -1260,13 +1260,13 @@ main .container .right {
   width: 40px;
   height: 40px;
   background: #61dafb;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: bold;
-  font-size: 7px;
+  font-size: 6px;
   transition: transform 0.2s ease-out, background 0.2s;
 }
 
