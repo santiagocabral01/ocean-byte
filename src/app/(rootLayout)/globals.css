@@ -137,10 +137,6 @@ main {
   font-size: 9px;
 }
 
-.left .sidebar .menu-item:hover {
-  background: var(--color-light);
-}
-
 .left .sidebar i {
   font-size: 1.4rem;
   color: var(--color-gray);
@@ -1165,13 +1161,75 @@ main .container .right {
   margin-right: 1rem;
 }
 
-
-
 /* jhjhjhjhjh */
-
 
 .icon-badge-check:hover {
   stroke: #4CAF50; /* Green check on hover */
   transform: scale(1.1); /* Slight zoom effect */
   transition: all 0.3s ease-in-out;
+}
+
+
+/* EXPLORE SECTION ITEMS VARIOUS STYLES */
+
+.section-elements-trend{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.items-elements-trend-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.trend-start-list, .trend-mid_start-list, .trend-center-list, .trend-mid_end-list, .trend-end-list{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.trend-start-list .trend-start-item, .trend-mid_start-list .trend-mid_start-item, .trend-center-list .trend-center-item, .trend-mid_end-list .trend-mid_end-item, .trend-end-list .trend-end-item{
+
+  border-radius: 50%;
+}
+
+.trend-start-list .trend-start-item{
+  background-color: red;
+  width: 40px;
+  height: 40px;
+}
+
+.trend-mid_start-list .trend-mid_start-item{
+  background-color: green;
+  width: 64px;
+  height: 64px;
+}
+
+.trend-center-list .trend-center-item{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.trend-mid_end-list .trend-mid_end-item{
+  background-color: orange;
+  width: 64px;
+  height: 64px;
+}
+
+.trend-end-list .trend-end-item{
+  background-color: orangered;
+  width: 40px;
+  height: 40px;
+}
+
+.trend-center-list{
+  gap: 6px;
 }
